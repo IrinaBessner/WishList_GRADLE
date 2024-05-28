@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regretion" verbose="1">
+    <test name="Regretion">
+        <classes>
+            <class name="com.wishlist.tests.homepage.HomePagePositiveTest"/>
+            <class name="com.wishlist.tests.account.CreateAccountPagePositiveTests"/>
+            <class name="com.wishlist.tests.login.LoginAuthUserPositiveTests">
+<!--                <methods>-->
+<!--                    <exclude name=".*Negative.*"/>-->
+<!--                </methods>-->
+            </class>
+            <class name="com.wishlist.tests.account.DeleteAccountPagePositiveTests"/>
+        </classes>
+    </test>
+</suite>
