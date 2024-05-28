@@ -1,5 +1,7 @@
 package com.wishlist.tests.account;
 
+import com.wishlist.fw.DataProviderClass;
+import com.wishlist.models.User;
 import com.wishlist.pages.*;
 import com.wishlist.tests.TestBase;
 import org.testng.annotations.*;
@@ -38,7 +40,6 @@ public class CreateAccountPagePositiveTests extends TestBase {
     }
 
     @AfterMethod(enabled = true)
-
     public void postcondition() {
         accountPage.selectDeleteAccountButton();
         homePage.isHomePagePresent();

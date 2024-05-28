@@ -6,13 +6,13 @@ import com.wishlist.pages.HomePage;
 import com.wishlist.pages.LoginPage;
 import com.wishlist.pages.SignUpPage;
 import com.wishlist.tests.TestBase;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
+
 import static com.wishlist.data.UserData.*;
 public class LoginAuthUserNegativeTests extends TestBase {
 
     @BeforeMethod
+
     public void precondition() {
         homePage = new HomePage(app.driver);
         loginPage = new LoginPage(app.driver);
@@ -70,7 +70,8 @@ public class LoginAuthUserNegativeTests extends TestBase {
         loginPage.verifyErrorMessage("Invalid");
     }
 
-    @AfterMethod(enabled = true)
+  @AfterMethod(enabled = true)
+
     public void postcondition() {
         loginPage
                 .enterPersonalData(USER_DUDKINA_LOGIN)

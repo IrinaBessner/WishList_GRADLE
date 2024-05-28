@@ -172,7 +172,7 @@ public class BasePage {
         }
     }
 
-    public String takeScre() {
+    public String takeScreenshoot() {
         File tmp = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File screenshot = new File("Screenshots/screen-"
                 + System.currentTimeMillis() + ".png");

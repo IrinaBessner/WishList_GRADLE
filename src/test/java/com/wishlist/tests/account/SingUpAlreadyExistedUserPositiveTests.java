@@ -1,5 +1,6 @@
 package com.wishlist.tests.account;
 
+import com.wishlist.fw.DataProviderClass;
 import com.wishlist.models.User;
 import com.wishlist.pages.AccountPage;
 import com.wishlist.pages.HomePage;
@@ -39,6 +40,16 @@ public class SingUpAlreadyExistedUserPositiveTests extends TestBase {
                 .enterPersonalData(USER_DUDKINA_SIGNUP)
                 .clickOnSignUpButton()
                 .verifyErrorMessage("exists");
+    }
+
+    @Test(dataProvider = "inValidEmailSignUpData", dataProviderClass = DataProviderClass.class)
+    public void fillSignUpWithCsvFileNegative(User user) {
+        new HomePage(app.driver).clickOnSignUpLink();
+        new SignUpPage(app.driver)
+                .enterPersonalData(user)
+                .clickOnSignUpButton()
+                .verifySignUpButton("Sign Up");
+
     }
 
     @AfterMethod(enabled = true)

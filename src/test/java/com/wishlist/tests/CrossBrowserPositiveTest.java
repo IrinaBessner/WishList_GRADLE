@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.*;
 
-public class CrossBrowserPositiveTest {
+public class CrossBrowserPositiveTest  {
     WebDriver driver;
 
     @BeforeMethod
@@ -17,8 +17,8 @@ public class CrossBrowserPositiveTest {
 //        } else if (browser.equalsIgnoreCase("firefox")) {
 //            System.setProperty("webdriver.gecko.driver", "C:/Tools/geckodriver.exe");
 //            driver = new FirefoxDriver();
-        } else if (browser.equalsIgnoreCase("ie")) {
-            System.setProperty("webdriver.ie.driver", "C:/Tools/msedgedriver.exe");
+        } else if (browser.equalsIgnoreCase("edge")) {
+            System.setProperty("webdriver.edge.driver", "C:/Tools/msedgedriver.exe");
             driver = new EdgeDriver();
         }
         driver.manage().window().maximize();
@@ -32,16 +32,17 @@ public class CrossBrowserPositiveTest {
             setup(browser);
             driver.get("http://localhost:3000/");
             Thread.sleep(2000); // Пауза в 2 секунды
-            // Дополнительные шаги и проверки
         }
         teardown();
     }
 
     @AfterMethod(enabled = true)
+
     public void teardown() {
         if (driver != null) {
             driver.quit();
             driver=null;
         }
-    }
+   }
+
 }

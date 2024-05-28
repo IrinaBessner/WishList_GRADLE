@@ -21,7 +21,7 @@ import static jdk.internal.org.objectweb.asm.commons.Method.getMethod;
 public class TestBase {
 
     protected static ApplicationManager app = new ApplicationManager("chrome");
-   Logger logger=LoggerFactory.getLogger(TestBase.class);
+    Logger logger = LoggerFactory.getLogger(TestBase.class);
     public WebDriver driver;
 
     public HomePage homePage;
@@ -31,7 +31,6 @@ public class TestBase {
     public AboutUsPage aboutUsPage;
     public PrivacyPolicyPage privacyPolicyPage;
     public WishListPage wishListPage;
-
     public GiftPage giftPage;
     public WishListContentPage wishListContentPage;
 
@@ -68,7 +67,8 @@ public class TestBase {
         if (result.isSuccess()) {
             logger.info("PASSED: " + result.getMethod().getMethodName());
         } else {
-            logger.error("FAILED: " + result.getMethod().getMethodName());
+            logger.error("FAILED: " + result.getMethod().getMethodName() + " Screenshot: " + wishListPage.takeScreenshoot());
+
         }
         logger.info("Stop test");
         logger.info("-----------------------------------------------------------");
@@ -79,56 +79,4 @@ public class TestBase {
         }
     }
 }
-
-//    //@BeforeMethod
-//    @BeforeSuite
-//    public void setUp(Method method) {
-//       logger.info("Start test" + method.getName());
-//
-//        String browser = System.getProperty("browser", "chrome");
-//        app = new ApplicationManager(browser);
-//        driver = app.getDriver();
-//        app.init();
-//        WebDriverWait wait = new WebDriverWait(app.driver, Duration.ofSeconds(30));
-//        wait.until(ExpectedConditions.urlToBe("http://localhost:3000/"));
-//
-//        // app = new ApplicationManager(Browser.CHROME.browserName());
-//        // app.init();
-//
-//        //driver = new ChromeDriver();
-//        //driver.get("http://localhost:3000/");
-//        //driver.manage().window().maximize();
-//        //  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//    }
-//    @AfterSuite
-//   // @AfterMethod(enabled = true)
-//    public void tearDown() {
-//        app.driver.quit();
-//    }
-//
-////    @BeforeMethod
-////    public void startTest(Method method){
-////        logger.info("Start test" + method.getName());
-////    }
-//
-//    @AfterMethod
-//    public void stopTest(ITestResult result){
-//        if(result.isSuccess()) {
-//            logger.info("PASSED" +result.getMethod().getMethodName());
-//        }else{
-//
-//            logger.error("FAILED" + result.getMethod().getMethodName()+ "Screenshot: "
-//                    + app.getUser.takeScreenshot());
-//        }
-//        logger.info("Stop test");
-//        logger.info("-----------------------------------------------------------");
-//
-//    if (driver != null) {
-//        driver.quit();
-//        driver = null;
-//    }
-//
-//}
-
-
 
