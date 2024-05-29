@@ -1,0 +1,14 @@
+23:37:37.588 [Test worker] INFO  com.wishlist.tests.TestBase -- Start test: fillRegistrationForm
+23:38:11.106 [Test worker] INFO  com.wishlist.tests.TestBase -- Start test: deleteAccount
+23:38:29.652 [Test worker] INFO  com.wishlist.tests.TestBase -- Start test: fillSignUpWithCsvFileNegative
+23:38:48.933 [Test worker] INFO  com.wishlist.tests.TestBase -- Start test: addGiftToExistedWishListTest
+23:39:08.194 [Test worker] INFO  com.wishlist.tests.TestBase -- Start test: deleteGiftFromWishList
+23:39:27.151 [Test worker] INFO  com.wishlist.tests.TestBase -- Start test: clickOnAboutUsLinkTest
+23:39:40.733 [Test worker] INFO  com.wishlist.tests.TestBase -- Start test: fillLogInWithCsvFileNegative
+23:39:44.996 [Test worker] INFO  com.wishlist.tests.TestBase -- Start test: fillLogInFormViaRegistrationForm
+23:40:09.180 [Test worker] INFO  com.wishlist.tests.TestBase -- Start test: loginWithInvalidEmaildNegativeTest
+23:40:28.826 [Test worker] INFO  com.wishlist.tests.TestBase -- Start test: fillLogInForm
+23:40:48.763 [Test worker] INFO  com.wishlist.tests.TestBase -- Start test: loginCheckVisibilityPassword
+23:41:10.750 [Test worker] INFO  com.wishlist.tests.TestBase -- Start test: CounterOffAddedGiftsTest
+23:41:31.210 [Test worker] INFO  com.wishlist.tests.TestBase -- Start test: CounterDaysLeftTest
+23:41:51.680 [Test worker] INFO  com.wishlist.tests.TestBase -- Start test: clickOnCreateNewWishList
