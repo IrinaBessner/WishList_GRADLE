@@ -4,6 +4,7 @@ import com.wishlist.fw.DataProviderClass;
 import com.wishlist.models.User;
 import com.wishlist.pages.*;
 import com.wishlist.tests.TestBase;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 
 import static com.wishlist.data.UserData.*;

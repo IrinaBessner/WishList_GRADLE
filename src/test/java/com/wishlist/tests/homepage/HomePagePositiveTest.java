@@ -77,7 +77,7 @@ public class HomePagePositiveTest extends TestBase {
                 .clickOnGitHubButton();
     }
 
-    @AfterMethod(enabled = true)
+    @AfterMethod
     public void postcondition() {
         tearDown();
     }

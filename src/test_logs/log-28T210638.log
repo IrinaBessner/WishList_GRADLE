@@ -1,7 +1,0 @@
-21:06:39.813 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
-  C:\Users\irina\AppData\Local\JetBrains\IdeaIC2024.1\temp-testng-customsuite.xml
-
-21:06:45.952 [main] INFO  com.wishlist.tests.TestBase -- Start test: crossBrowserTest
-21:07:12.777 [main] INFO  com.wishlist.tests.TestBase -- PASSED: crossBrowserTest
-21:07:12.777 [main] INFO  com.wishlist.tests.TestBase -- Stop test
-21:07:12.777 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------

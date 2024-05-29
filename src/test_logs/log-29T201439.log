@@ -1,0 +1,164 @@
+20:14:40.662 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\irina\AppData\Local\JetBrains\IdeaIC2024.1\temp-testng-customsuite.xml
+
+20:15:04.049 [main] INFO  com.wishlist.tests.TestBase -- Start test: addGiftToExistedWishListTest
+20:15:29.943 [main] INFO  com.wishlist.tests.TestBase -- PASSED: addGiftToExistedWishListTest
+20:15:29.943 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:15:29.943 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:15:29.945 [main] INFO  com.wishlist.tests.TestBase -- Start test: deleteGiftFromWishList
+20:15:47.461 [main] INFO  com.wishlist.tests.TestBase -- PASSED: deleteGiftFromWishList
+20:15:47.462 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:15:47.462 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:15:47.465 [main] INFO  com.wishlist.tests.TestBase -- Start test: fillRegistrationForm
+20:15:55.594 [main] INFO  com.wishlist.tests.TestBase -- PASSED: fillRegistrationForm
+20:15:55.595 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:15:55.595 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:15:55.597 [main] INFO  com.wishlist.tests.TestBase -- Start test: deleteAccount
+20:16:04.136 [main] INFO  com.wishlist.tests.TestBase -- PASSED: deleteAccount
+20:16:04.136 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:16:04.136 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:16:04.167 [main] INFO  com.wishlist.tests.TestBase -- Start test: fillSignUpWithCsvFileNegative
+20:16:15.873 [main] INFO  com.wishlist.tests.TestBase -- PASSED: fillSignUpWithCsvFileNegative
+20:16:15.874 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:16:15.874 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:16:15.876 [main] INFO  com.wishlist.tests.TestBase -- Start test: fillSignUpWithCsvFileNegative
+20:16:27.490 [main] INFO  com.wishlist.tests.TestBase -- PASSED: fillSignUpWithCsvFileNegative
+20:16:27.491 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:16:27.491 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:16:27.492 [main] INFO  com.wishlist.tests.TestBase -- Start test: fillSignUpWithCsvFileNegative
+20:16:39.168 [main] INFO  com.wishlist.tests.TestBase -- PASSED: fillSignUpWithCsvFileNegative
+20:16:39.168 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:16:39.168 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:16:39.170 [main] INFO  com.wishlist.tests.TestBase -- Start test: fillSignUpWithCsvFileNegative
+20:16:50.998 [main] INFO  com.wishlist.tests.TestBase -- PASSED: fillSignUpWithCsvFileNegative
+20:16:50.998 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:16:50.998 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:16:51.000 [main] INFO  com.wishlist.tests.TestBase -- Start test: fillSignUpWithCsvFileNegative
+20:17:02.804 [main] INFO  com.wishlist.tests.TestBase -- PASSED: fillSignUpWithCsvFileNegative
+20:17:02.804 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:17:02.804 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:17:02.806 [main] INFO  com.wishlist.tests.TestBase -- Start test: signUpAlreadyRegisteredUserTest
+20:17:14.204 [main] INFO  com.wishlist.tests.TestBase -- PASSED: signUpAlreadyRegisteredUserTest
+20:17:14.205 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:17:14.205 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:17:14.208 [main] INFO  com.wishlist.tests.TestBase -- Start test: loginWithInvalidEmaildNegativeTest
+20:17:25.251 [main] INFO  com.wishlist.tests.TestBase -- PASSED: loginWithInvalidEmaildNegativeTest
+20:17:25.251 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:17:25.251 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:17:25.252 [main] INFO  com.wishlist.tests.TestBase -- Start test: loginWithWrongPasswordNegativeTest
+20:17:36.208 [main] INFO  com.wishlist.tests.TestBase -- PASSED: loginWithWrongPasswordNegativeTest
+20:17:36.208 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:17:36.208 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:17:36.213 [main] INFO  com.wishlist.tests.TestBase -- Start test: loginWithoutEmaildNegativeTest
+20:17:37.550 [main] INFO  com.wishlist.tests.TestBase -- Start test: fillLogInForm
+20:17:48.768 [main] INFO  com.wishlist.tests.TestBase -- PASSED: fillLogInForm
+20:17:48.768 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:17:48.769 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:17:48.772 [main] INFO  com.wishlist.tests.TestBase -- Start test: fillLogInWithCsvFileNegative
+20:17:53.639 [main] INFO  com.wishlist.tests.TestBase -- PASSED: fillLogInWithCsvFileNegative
+20:17:53.639 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:17:53.639 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:17:53.642 [main] INFO  com.wishlist.tests.TestBase -- Start test: fillLogInWithCsvFileNegative
+20:17:58.338 [main] INFO  com.wishlist.tests.TestBase -- PASSED: fillLogInWithCsvFileNegative
+20:17:58.338 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:17:58.338 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:17:58.339 [main] INFO  com.wishlist.tests.TestBase -- Start test: fillLogInWithCsvFileNegative
+20:18:02.951 [main] INFO  com.wishlist.tests.TestBase -- PASSED: fillLogInWithCsvFileNegative
+20:18:02.951 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:18:02.951 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:18:02.952 [main] INFO  com.wishlist.tests.TestBase -- Start test: fillLogInWithCsvFileNegative
+20:18:07.646 [main] INFO  com.wishlist.tests.TestBase -- PASSED: fillLogInWithCsvFileNegative
+20:18:07.646 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:18:07.646 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:18:07.648 [main] INFO  com.wishlist.tests.TestBase -- Start test: fillLogInWithCsvFileNegative
+20:18:12.235 [main] INFO  com.wishlist.tests.TestBase -- PASSED: fillLogInWithCsvFileNegative
+20:18:12.235 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:18:12.235 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:18:12.237 [main] INFO  com.wishlist.tests.TestBase -- Start test: loginWithValidEmailNegativeTest
+20:18:17.011 [main] INFO  com.wishlist.tests.TestBase -- PASSED: loginWithValidEmailNegativeTest
+20:18:17.012 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:18:17.012 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:18:17.013 [main] INFO  com.wishlist.tests.TestBase -- Start test: fillLogInFormViaRegistrationForm
+20:18:26.721 [main] INFO  com.wishlist.tests.TestBase -- PASSED: fillLogInFormViaRegistrationForm
+20:18:26.721 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:18:26.721 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:18:26.723 [main] INFO  com.wishlist.tests.TestBase -- Start test: loginCheckVisibilityPassword
+20:18:38.501 [main] INFO  com.wishlist.tests.TestBase -- PASSED: loginCheckVisibilityPassword
+20:18:38.501 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:18:38.501 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:18:38.504 [main] INFO  com.wishlist.tests.TestBase -- Start test: clickOnAboutUsLinkTest
+20:18:42.029 [main] INFO  com.wishlist.tests.TestBase -- PASSED: clickOnAboutUsLinkTest
+20:18:42.030 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:18:42.030 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:18:42.031 [main] INFO  com.wishlist.tests.TestBase -- Start test: clickOnCreateNewWishList
+20:18:46.085 [main] INFO  com.wishlist.tests.TestBase -- PASSED: clickOnCreateNewWishList
+20:18:46.086 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:18:46.086 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:18:46.087 [main] INFO  com.wishlist.tests.TestBase -- Start test: clickOnGitHubButtonTest
+20:18:51.592 [main] INFO  com.wishlist.tests.TestBase -- PASSED: clickOnGitHubButtonTest
+20:18:51.593 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:18:51.593 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:18:51.595 [main] INFO  com.wishlist.tests.TestBase -- Start test: clickOnIwantWishListButton
+20:18:55.941 [main] INFO  com.wishlist.tests.TestBase -- PASSED: clickOnIwantWishListButton
+20:18:55.942 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:18:55.942 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:18:55.943 [main] INFO  com.wishlist.tests.TestBase -- Start test: clickOnLogInLink
+20:18:59.448 [main] INFO  com.wishlist.tests.TestBase -- PASSED: clickOnLogInLink
+20:18:59.449 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:18:59.449 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:18:59.450 [main] INFO  com.wishlist.tests.TestBase -- Start test: clickOnSignUpLink
+20:19:02.991 [main] INFO  com.wishlist.tests.TestBase -- PASSED: clickOnSignUpLink
+20:19:02.992 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:19:02.992 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:19:02.993 [main] INFO  com.wishlist.tests.TestBase -- Start test: cliclOnPrivacyPolicyTest
+20:19:07.272 [main] INFO  com.wishlist.tests.TestBase -- PASSED: cliclOnPrivacyPolicyTest
+20:19:07.273 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:19:07.273 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:19:07.275 [main] INFO  com.wishlist.tests.TestBase -- Start test: editWishListTest
+20:19:28.207 [main] INFO  com.wishlist.tests.TestBase -- PASSED: editWishListTest
+20:19:28.207 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:19:28.207 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:19:28.209 [main] INFO  com.wishlist.tests.TestBase -- Start test: deleteWishList
+20:19:38.394 [main] INFO  com.wishlist.tests.TestBase -- PASSED: deleteWishList
+20:19:38.394 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:19:38.394 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:19:38.396 [main] INFO  com.wishlist.tests.TestBase -- Start test: CounterDaysLeftTest
+20:19:48.013 [main] INFO  com.wishlist.tests.TestBase -- PASSED: CounterDaysLeftTest
+20:19:48.013 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:19:48.013 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:19:48.015 [main] INFO  com.wishlist.tests.TestBase -- Start test: CounterOffAddedGiftsTest
+20:20:07.775 [main] INFO  com.wishlist.tests.TestBase -- PASSED: CounterOffAddedGiftsTest
+20:20:07.775 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:20:07.775 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:20:07.776 [main] INFO  com.wishlist.tests.TestBase -- Start test: CounterOffAddedGiftsTest
+20:20:27.620 [main] INFO  com.wishlist.tests.TestBase -- PASSED: CounterOffAddedGiftsTest
+20:20:27.620 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:20:27.620 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:20:27.621 [main] INFO  com.wishlist.tests.TestBase -- Start test: deleteAllWishlistsPositiveTest
+20:21:00.425 [main] INFO  com.wishlist.tests.TestBase -- PASSED: deleteAllWishlistsPositiveTest
+20:21:00.425 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:21:00.425 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:21:00.426 [main] INFO  com.wishlist.tests.TestBase -- Start test: clickOnLogInLinkHomePageTest
+20:21:11.544 [main] INFO  com.wishlist.tests.TestBase -- PASSED: clickOnLogInLinkHomePageTest
+20:21:11.544 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:21:11.544 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:21:11.546 [main] INFO  com.wishlist.tests.TestBase -- Start test: clickOnCreateNewWishList
+20:21:25.291 [main] INFO  com.wishlist.tests.TestBase -- PASSED: clickOnCreateNewWishList
+20:21:25.291 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:21:25.292 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:21:25.293 [main] INFO  com.wishlist.tests.TestBase -- Start test: clickOnLoginLinkHomePageNotnotAuthUserTest
+20:21:35.395 [main] INFO  com.wishlist.tests.TestBase -- PASSED: clickOnLoginLinkHomePageNotnotAuthUserTest
+20:21:35.395 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:21:35.395 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:21:35.397 [main] INFO  com.wishlist.tests.TestBase -- Start test: clickOnCreateNewWishList
+20:21:48.530 [main] INFO  com.wishlist.tests.TestBase -- PASSED: clickOnCreateNewWishList
+20:21:48.530 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:21:48.530 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:21:48.531 [main] INFO  com.wishlist.tests.TestBase -- Start test: clickOnIWantWishList
+20:22:01.332 [main] INFO  com.wishlist.tests.TestBase -- PASSED: clickOnIWantWishList
+20:22:01.333 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:22:01.333 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------
+20:22:01.335 [main] INFO  com.wishlist.tests.TestBase -- Start test: clickOnIWantWishListButtonTest
+20:22:12.903 [main] INFO  com.wishlist.tests.TestBase -- PASSED: clickOnIWantWishListButtonTest
+20:22:12.903 [main] INFO  com.wishlist.tests.TestBase -- Stop test
+20:22:12.903 [main] INFO  com.wishlist.tests.TestBase -- -----------------------------------------------------------

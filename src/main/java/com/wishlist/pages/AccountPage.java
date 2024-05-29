@@ -1,6 +1,8 @@
 package com.wishlist.pages;
 
+import com.wishlist.models.Wishlist;
 import org.openqa.selenium.*;
+import org.openqa.selenium.devtools.v125.fedcm.model.Account;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,6 +13,7 @@ import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.util.List;
 
 public class AccountPage extends BasePage {
     public AccountPage(WebDriver driver) {
@@ -18,7 +21,6 @@ public class AccountPage extends BasePage {
         super(driver);
         PageFactory.initElements(driver, this);
     }
-
 
     @FindBy(css = ".create-wishlist-button-in-account")
     //@FindBy(xpath = "//a[contains(text(),'Create WishList')]")
@@ -174,5 +176,13 @@ public class AccountPage extends BasePage {
         return this;
     }
 
+    public AccountPage confirmWishListsAreAbsent() {
+        Assert.assertTrue(!isElementPresent(addGiftButton));
+        return this;
+    }
+
+    public boolean isAddGiftButtonPresent() {
+        return isElementPresent(addGiftButton);
+    }
 }
 

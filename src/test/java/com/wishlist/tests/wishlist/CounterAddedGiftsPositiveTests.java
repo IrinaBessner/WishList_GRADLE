@@ -46,7 +46,7 @@ public class CounterAddedGiftsPositiveTests extends TestBase {
 
     @Test(invocationCount = 2)
     private void CounterOffAddedGiftsTest() {
-        int counter = accountPage.getGiftCount();     //0 gifts
+        int counter = accountPage.getGiftCount(); //0 gifts
         accountPage
                 .clickOnAddGiftButton();
         giftPage.
@@ -55,7 +55,7 @@ public class CounterAddedGiftsPositiveTests extends TestBase {
         wishListContentPage
                 .clickOnGoToWishLists();
         accountPage
-                .getGiftCount();         //1 gift
+                .getGiftCount();                  //1 gift
         accountPage
                 .clickOnAddGiftButton();
         giftPage
@@ -65,12 +65,11 @@ public class CounterAddedGiftsPositiveTests extends TestBase {
                 .clickOnGoToWishLists();
 
         int newCounter;
-        newCounter = accountPage.getGiftCount();     //2 gifts
+        newCounter = accountPage.getGiftCount();   //2 gifts
         Assert.assertEquals(newCounter, counter);
-
     }
 
-    @AfterMethod(enabled = true)
+    @AfterMethod
     public void postcondition() {
         accountPage.selectDeleteAccountButton();
         homePage.isHomePagePresent();

@@ -24,7 +24,7 @@ public class CreateWLiWantButtonHomePageNOTAuthUserPositiveTests extends TestBas
             homePage.clickOnLogOutLink();
             homePage.clickIwantWishListButtonWithJS();
         } else {
-            homePage .clickIwantWishListButtonWithJS();
+            homePage.clickIwantWishListButtonWithJS();
         }
 
         loginPage.enterPersonalData(USER_DUDKINA_LOGIN)
@@ -50,7 +50,7 @@ public class CreateWLiWantButtonHomePageNOTAuthUserPositiveTests extends TestBas
                 .verifyCardOfWishList();
     }
 
-    @AfterMethod(enabled = true)
+    @AfterMethod
     public void postcondition() {
         accountPage.selectDeleteAccountButton();
         homePage.isHomePagePresent();

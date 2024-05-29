@@ -38,11 +38,8 @@ public class CounterDaysLeftPositiveTests extends TestBase {
                 .clickOnLogInButton();
         accountPage
                 .createWishListButton();
-
-       // wishlist = new Wishlist("Birthday", "I have birthday soon", "15102025");
         wishListPage
                 .fillWishListForm(WISHLIST_BIRTHDAY_DATA)
-               // .fillWishListForm(wishlist.getTitle(), wishlist.getComment(), wishlist.getEventDate())
                 .clickSaveButton();
     }
 
@@ -53,11 +50,10 @@ public class CounterDaysLeftPositiveTests extends TestBase {
         accountPage.verifyDayCounterLeft(leftDays);
     }
 
-    @AfterMethod(enabled = true)
+    @AfterMethod
     public void postcondition() {
         accountPage.selectDeleteAccountButton();
         homePage.isHomePagePresent();
         tearDown();
     }
-
 }

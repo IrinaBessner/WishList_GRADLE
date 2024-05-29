@@ -49,7 +49,7 @@ public class LoginAuthUserPositiveTests extends TestBase {
                 .verifyAccountPage("Create WishList");
     }
 
-    @AfterMethod(enabled = true)
+    @AfterMethod
     public void postcondition() {
         accountPage.selectDeleteAccountButton();
         homePage.isHomePagePresent();

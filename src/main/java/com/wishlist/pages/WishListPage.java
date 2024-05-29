@@ -66,4 +66,17 @@ public class WishListPage extends BasePage {
         click(savebutton);
         return new WishListPage(driver);
     }
+
+    @FindBy(xpath = "//button[.='Add gift']")
+    WebElement addGift;
+    public WishListPage clickOnAddGiftButton() {
+        click(addGift);
+        return new WishListPage(driver);
+    }
+    @FindBy(css = "go-to-wishlists")
+    WebElement goToWishLists;
+    public WishListPage clickOnGoToWishLists() {
+        click(goToWishLists);
+        return new WishListPage(driver);
+    }
 }

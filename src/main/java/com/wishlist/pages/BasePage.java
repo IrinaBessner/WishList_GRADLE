@@ -176,7 +176,6 @@ public class BasePage {
         File tmp = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File screenshot = new File("Screenshots/screen-"
                 + System.currentTimeMillis() + ".png");
-
         try {
             Files.copy(tmp, screenshot);
         } catch (IOException e) {

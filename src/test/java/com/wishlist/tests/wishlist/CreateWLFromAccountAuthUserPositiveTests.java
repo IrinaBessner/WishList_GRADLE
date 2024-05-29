@@ -52,7 +52,7 @@ public class CreateWLFromAccountAuthUserPositiveTests extends TestBase {
                 .verifyCardOfWishList();
     }
 
-    @AfterMethod(enabled = true)
+    @AfterMethod
     public void postcondition() {
         accountPage.selectDeleteAccountButton();
         homePage.isHomePagePresent();

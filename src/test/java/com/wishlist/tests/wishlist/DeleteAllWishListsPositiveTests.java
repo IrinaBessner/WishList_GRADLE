@@ -36,29 +36,31 @@ public class DeleteAllWishListsPositiveTests extends TestBase {
         loginPage
                 .enterPersonalData(USER_DUDKINA_LOGIN)
                 .clickOnLogInButton();
-    }
-
-    @Test()
-    public void deleteAllWishlistsPositiveTest() {
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i <2; i++) {
             accountPage
                     .createWishListButton();
             wishListPage
                     .fillWishListForm(WISHLIST_BIRTHDAY_DATA)
                     .clickSaveButton();
         }
+    }
 
-        for (int i = 0; i < 3; i++) {
+    @Test()
+    public void deleteAllWishlistsPositiveTest() {
+
+        while (accountPage.isAddGiftButtonPresent()) {
             accountPage.clickOnWishlist();
             wishListContentPage.clickOnBasketToDelete()
                     .clickOnOKbutton();
         }
+        accountPage.confirmWishListsAreAbsent();
     }
 
-    @AfterMethod(enabled = true)
+    @AfterMethod
     public void postcondition() {
         accountPage.selectDeleteAccountButton();
         homePage.isHomePagePresent();
         tearDown();
     }
 }
+

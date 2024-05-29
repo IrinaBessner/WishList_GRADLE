@@ -45,12 +45,12 @@ public class CreateWLButtonHomePageAuthUserPositiveTests extends TestBase {
         wishListPage
                 .fillWishListForm(WISHLIST_BIRTHDAY_DATA)
                 .clickSaveButton();
-        Thread.sleep(1500);
+        Thread.sleep(3000);
         accountPage
                 .verifyCardOfWishList();
     }
 
-    @AfterMethod(enabled = true)
+    @AfterMethod
     public void postcondition() {
         accountPage.selectDeleteAccountButton();
         homePage.isHomePagePresent();

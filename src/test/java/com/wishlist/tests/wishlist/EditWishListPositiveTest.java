@@ -1,19 +1,17 @@
-package com.wishlist.tests.gift;
+package com.wishlist.tests.wishlist;
 
-import com.wishlist.data.WishListData;
-import com.wishlist.models.User;
 import com.wishlist.pages.*;
 import com.wishlist.tests.TestBase;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static com.wishlist.data.GiftData.GIFT_FOR_LENA;
-import static com.wishlist.data.UserData.*;
+import static com.wishlist.data.UserData.USER_DUDKINA_LOGIN;
+import static com.wishlist.data.UserData.USER_DUDKINA_SIGNUP;
 import static com.wishlist.data.WishListData.WISHLIST_BIRTHDAY_DATA;
 
-public class AddGiftToWishListPositiveTests extends TestBase {
+public class EditWishListPositiveTest extends TestBase {
 
     @BeforeMethod
     public void precondition() {
@@ -23,7 +21,7 @@ public class AddGiftToWishListPositiveTests extends TestBase {
         signupPage = new SignUpPage(app.driver);
         wishListPage = new WishListPage(app.driver);
         giftPage = new GiftPage(app.driver);
-        wishListContentPage=new WishListContentPage(app.driver);
+        wishListContentPage = new WishListContentPage(app.driver);
 
         if (!homePage.logInLinkPresent()) {
             homePage.clickOnLogOutLink();
@@ -43,22 +41,25 @@ public class AddGiftToWishListPositiveTests extends TestBase {
         wishListPage
                 .fillWishListForm(WISHLIST_BIRTHDAY_DATA)
                 .clickSaveButton();
-    }
-
-    @Test
-    private void addGiftToExistedWishListTest() throws InterruptedException {
         accountPage
                 .clickOnAddGiftButton();
         giftPage
-                .fillGiftform(GIFT_FOR_LENA);                                 // "https://butik-duhov.ru/parfjumerija/originaly/25198-1/"
+                .fillGiftform(GIFT_FOR_LENA)
+                .clickSaveButton();
+    }
+
+    @Test
+    public void editWishListTest() throws InterruptedException{
+        wishListContentPage.clickOnAddGift();
+        giftPage.fillGiftform(GIFT_FOR_LENA)
+                .clickSaveButton();
         Thread.sleep(3000);
-        giftPage.clickSaveButton();
-        wishListContentPage.verifyShare();
+        wishListContentPage.clickOnGoToWishLists();
+        accountPage.verifyAccountPage("Create WishList");
     }
 
     @AfterMethod
     public void postcondition() {
-        wishListContentPage.clickOnGoToWishLists();
         accountPage.selectDeleteAccountButton();
         homePage.isHomePagePresent();
         tearDown();

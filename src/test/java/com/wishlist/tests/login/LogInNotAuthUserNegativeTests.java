@@ -64,7 +64,7 @@ public class LogInNotAuthUserNegativeTests extends TestBase {
     }
 
 
-    @AfterMethod(enabled = true)
+    @AfterMethod
     public void postcondition() {
         loginPage.clickOnHomeLink();
         homePage.isHomePagePresent();

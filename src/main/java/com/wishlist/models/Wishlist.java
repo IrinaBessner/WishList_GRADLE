@@ -1,6 +1,9 @@
 package com.wishlist.models;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class Wishlist {
 
@@ -16,5 +19,9 @@ public class Wishlist {
 
     public Wishlist (WebDriver driver) {
 
+    }
+
+    public static List<WebElement> findElements(WebElement element) {
+        return null;
     }
 }

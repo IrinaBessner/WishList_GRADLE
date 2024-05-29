@@ -17,7 +17,7 @@ public class WishListContentPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-     @FindBy(xpath = "//button[.='OK']")
+    @FindBy(xpath = "//button[.='OK']")
     // @FindBy(css = "button:nth-child(3)")
     //@FindBy(xpath = "//span[.='OK']")
     WebElement buttonOK;
@@ -65,6 +65,14 @@ public class WishListContentPage extends BasePage {
 
     public WishListContentPage clickOnGoToWishLists() {
         click(linkGoToWishlists);
+        return new WishListContentPage(driver);
+    }
+
+    @FindBy(xpath = "//button[.='Add gift']")
+    WebElement addGiftButton;
+
+    public WishListContentPage clickOnAddGift() {
+        click(addGiftButton);
         return new WishListContentPage(driver);
     }
 }

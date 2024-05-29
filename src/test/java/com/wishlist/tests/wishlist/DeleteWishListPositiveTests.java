@@ -49,8 +49,9 @@ public class DeleteWishListPositiveTests extends TestBase {
                 .clickOnBasketToDelete()
                 .clickOnOKbutton();
     }
-    @AfterMethod(enabled = true)
-    public void postcondition(){
+
+    @AfterMethod
+    public void postcondition() {
         accountPage.selectDeleteAccountButton();
         homePage.isHomePagePresent();
         tearDown();

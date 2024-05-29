@@ -46,17 +46,15 @@ public class CreateWLButtonHomePageNOTAuthUserPositiveTests extends TestBase {
         wishListPage
                 .fillWishListForm("Birthday", "I have birthday soon", "15102025")
                 .clickSaveButton();
-        Thread.sleep(1500);
+        Thread.sleep(3000);
         accountPage
                 .verifyCardOfWishList();
     }
 
-    @AfterMethod(enabled = true)
+    @AfterMethod
     public void postcondition() {
-        accountPage
-                .selectDeleteAccountButton();
-        homePage
-                .isHomePagePresent();
+        accountPage.selectDeleteAccountButton();
+        homePage.isHomePagePresent();
         tearDown();
     }
 }
