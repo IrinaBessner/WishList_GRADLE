@@ -37,7 +37,7 @@ public class LoginAuthUserNegativeTests extends TestBase {
         homePage
                 .clickOnLogInLink();
     }
-    // Нет errorMessage для пустых полей ввода.Проверяю, что после клика на кнопку Login страница не меняется
+    // No any errorMessage for empty fields. Verify page is not changed
     @Test
     public void loginWithoutPasswordNegativeTest() {
         loginPage

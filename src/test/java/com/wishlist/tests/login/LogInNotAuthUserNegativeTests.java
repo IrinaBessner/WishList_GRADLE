@@ -35,7 +35,6 @@ public class LogInNotAuthUserNegativeTests extends TestBase {
         }
     }
 
-    // Проверка, что незарегистрированный пользователь c валидным email НЕ может залогиниться
     @Test
     public void loginWithValidEmailNegativeTest() {
         loginPage
@@ -43,17 +42,6 @@ public class LogInNotAuthUserNegativeTests extends TestBase {
                 .clickOnLogInButton();
         loginPage.verifyErrorMessage("Invalid");
     }
-
-
-//    @Test(dataProvider = "iNvalidLoginData", dataProviderClass = DataProviderClass.class)
-//    public void fillLogInWithCsvFileNegative(User user) {
-//        WebDriver driver;
-//
-//        new LoginPage(app.driver)
-//                .enterPersonalData(user.getEmail(), user.getPassword())
-//                .clickOnLogInButton();
-//                loginPage.verifyErrorMessage("Error");
-//    }
 
     @Test(dataProvider = "LoginInValidData", dataProviderClass = DataProviderClass.class)
     public void fillLogInWithCsvFileNegative(User user) {

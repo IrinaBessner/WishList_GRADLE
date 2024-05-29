@@ -16,7 +16,6 @@ import org.testng.annotations.*;
 import java.lang.reflect.Method;
 import java.time.Duration;
 
-import static jdk.internal.org.objectweb.asm.commons.Method.getMethod;
 
 public class TestBase {
 
