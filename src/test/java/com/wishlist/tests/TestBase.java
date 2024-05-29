@@ -40,7 +40,7 @@ public class TestBase {
         driver = app.getDriver();
         app.init();
         WebDriverWait wait = new WebDriverWait(app.driver, Duration.ofSeconds(30));
-        wait.until(ExpectedConditions.urlToBe("http://project-wishlist-giftlistify-ccqrj.ondigitalocean.app/"));
+        wait.until(ExpectedConditions.urlToBe("https://project-wishlist-giftlistify-ccqrj.ondigitalocean.app/"));
     }
 
     @AfterSuite
