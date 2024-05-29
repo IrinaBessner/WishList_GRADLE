@@ -31,8 +31,8 @@ public class SignUpPage extends BasePage {
     WebElement yourpass;
     @FindBy(id = "confirm-password")
     WebElement confirmyourmpass;
-    //    @FindBy(xpath = "//button[.='Sign Up']")
-//    WebElement signUpButton;
+    // @FindBy(xpath = "//button[.='Sign Up']")
+   //  WebElement signUpButton;
     @FindBy(css = ".input-group:nth-child(4) svg")
     WebElement eye;
 
@@ -113,7 +113,6 @@ public class SignUpPage extends BasePage {
         return new SignUpPage(driver);
     }
 
-
     @FindBy(xpath = "//a[.='GiftListify']")
     WebElement clickOnLogo;
 
@@ -121,14 +120,6 @@ public class SignUpPage extends BasePage {
         click(clickOnLogo);
         return new AccountPage(driver);
     }
-
-//    @FindBy(id = "confirmResult")
-//    WebElement confirmResult;
-//
-//    public AlertsPage verifyResult(String text) {
-//        Assert.assertTrue(confirmResult.getText().contains(text));
-//        return this;
-//    }
 
     @AfterMethod(enabled = false)
     public void tearDown() {

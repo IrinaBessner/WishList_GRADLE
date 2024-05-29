@@ -55,8 +55,6 @@ public class WishListContentPage extends BasePage {
     public WishListContentPage chooseDelete() {
         click(dots);
         click(choosedelete);
-//        choose.sendKeys(delete);
-//        choose.sendKeys(Keys.ENTER);
         return new WishListContentPage(driver);
     }
 

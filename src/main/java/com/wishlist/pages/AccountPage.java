@@ -50,19 +50,6 @@ public class AccountPage extends BasePage {
         wait.until(ExpectedConditions.urlToBe("http://localhost:3000/"));
         return  new AccountPage(driver);
     }
-//    public AccountPage clickOnLogOutLinkAccount() {
-//        clickOnLogOutAcc.click();
-//        WebDriverWait wait= new WebDriverWait(driver,Duration.ofSeconds(10));
-//        wait.until(ExpectedConditions.urlToBe("http://localhost:3000/dashboard"));
-//        return new AccountPage(driver);
-//    }
-//    public HomePage clickOnLogOutLinkAccount() {
-//        clickOnLogOutAcc.click();
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//        wait.until(ExpectedConditions.urlToBe("http://localhost:3000/"));
-//        return new HomePage(driver);
-//    }
-
 
     @FindBy(css = "li:nth-child(1)")
     WebElement linkHome;
@@ -154,19 +141,19 @@ public class AccountPage extends BasePage {
         try {
             return Integer.parseInt(text);
         } catch (NumberFormatException e) {
-            return 0;   //508
+            return 0;
         }
     }
 
     public int daysLeftActual(String eventdate) {
-        //String eventDate = "15082025";
+
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("ddMMyyyy");
         LocalDate localDate = LocalDate.parse(eventdate, formatter);
         LocalDate today = LocalDate.now();
 
         int days = (int) ChronoUnit.DAYS.between(today, localDate);
         return days;
-        // return (int) ChronoUnit.DAYS.between(today, localDate);
+
     }
 
     public AccountPage verifyDayCounterLeft(int leftDays) {

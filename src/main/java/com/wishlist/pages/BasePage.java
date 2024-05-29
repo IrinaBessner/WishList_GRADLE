@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 public class BasePage {
-    //WebDriver driver;
+
     JavascriptExecutor js;
     public WebDriver driver;
     FluentWait<WebDriver> wait;
@@ -27,7 +27,6 @@ public class BasePage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
         js = (JavascriptExecutor) driver;
-//        js = (JavascriptExecutor) driver;
 //        wait = new FluentWait<>(driver) // Инициализируем FluentWait
 //                .withTimeout(Duration.ofSeconds(15)) // Устанавливаем таймаут ожидания
 //                .pollingEvery(Duration.ofSeconds(1)) // Устанавливаем периодичность проверки

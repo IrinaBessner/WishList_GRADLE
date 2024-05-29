@@ -18,6 +18,7 @@ public class WishListPage extends BasePage {
         super(driver);
         PageFactory.initElements(driver, this);
     }
+
     public
 
     @FindBy(id = "wishlist-name")
@@ -29,7 +30,7 @@ public class WishListPage extends BasePage {
     @FindBy(css = ".save-button-custom")
     WebElement savebutton;
 
-    public WishListPage fillWishListForm(String title, String comment, String date ) {
+    public WishListPage fillWishListForm(String title, String comment, String date) {
         scrollToTopWithJS();
         type(name, title);
         type(comments, comment);
@@ -43,8 +44,9 @@ public class WishListPage extends BasePage {
         }
         eventdate.sendKeys(date);
         eventdate.sendKeys(Keys.ENTER);
-              return new WishListPage(driver);
+        return new WishListPage(driver);
     }
+
     public WishListPage fillWishListForm(Wishlist wishlist) {
         scrollToTopWithJS();
         type(name, wishlist.title);
@@ -69,12 +71,15 @@ public class WishListPage extends BasePage {
 
     @FindBy(xpath = "//button[.='Add gift']")
     WebElement addGift;
+
     public WishListPage clickOnAddGiftButton() {
         click(addGift);
         return new WishListPage(driver);
     }
+
     @FindBy(css = "go-to-wishlists")
     WebElement goToWishLists;
+
     public WishListPage clickOnGoToWishLists() {
         click(goToWishLists);
         return new WishListPage(driver);

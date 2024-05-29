@@ -10,11 +10,9 @@ import org.openqa.selenium.remote.Browser;
 import java.time.Duration;
 
 public class ApplicationManager {
-    public BasePage basePage;
     public WebDriver driver;
     public String browser;
     public static ApplicationManager app = new ApplicationManager(System.getProperty("browser", Browser.CHROME.browserName()));
-    public User getUser;
 
     public WebDriver getDriver() {
         return driver;

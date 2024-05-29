@@ -26,16 +26,14 @@ public class HomePage extends BasePage {
         return new HomePage(driver);
     }
 
-//    @FindBy(css = "ul.nav-list :nth-child(3)")
+    //    @FindBy(css = "ul.nav-list :nth-child(3)")
     @FindBy(xpath = "//a[.='Log In']")
     WebElement logInLink;
 
     public HomePage clickOnLogInLink() {
         click(logInLink);
 //        safeClick(logInLink);
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(7));
-////        wait.until(ExpectedConditions.urlToBe("http://localhost:3000/dashboard"));
-//        wait.until(ExpectedConditions.urlToBe("http://localhost:3000/"));
+
 
         return new HomePage(driver);
     }
@@ -146,7 +144,6 @@ public class HomePage extends BasePage {
         return new HomePage(driver);
     }
 
-    //@FindBy(css = "[href='https://github.com/ania0005/Wishlist-project']")
     @FindBy(css = "img[alt='Link']")
     WebElement gitHubButton;
 

@@ -17,12 +17,4 @@ public class AboutUsPage extends BasePage{
         Assert.assertTrue(result.getText().contains(text));
         return this;
     }
-//
-//@FindBy(css="ul.nav-list :nth-child(2)")
-//WebElement aboutusLink;
-//    public AboutUsPage clickOnAboutUs() {
-//        click(aboutusLink);
-//        return  new AboutUsPage(driver);
-//    }
-
 }

@@ -19,7 +19,7 @@ public class LoginPage extends BasePage {
     }
 
     @FindBy(id = "email")
-    //   @FindBy(css="input:nth-child(2)")
+    //@FindBy(css="input:nth-child(2)")
     //@FindBy(xpath = "//input[@type='email']")
     WebElement useremailloc;
     @FindBy(id = "password")
