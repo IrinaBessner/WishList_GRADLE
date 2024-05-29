@@ -35,7 +35,7 @@ public class ApplicationManager {
             driver = new EdgeDriver();
         }
 
-        driver.get("http://localhost:3000/");
+        driver.get("https://project-wishlist-giftlistify-ccqrj.ondigitalocean.app/");
         driver.manage().window().maximize();
         //driver.manage().window().setSize(new Dimension(1920,1080));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

@@ -30,7 +30,7 @@ public class CrossBrowserPositiveTest  {
         String[] browsers = {"chrome", "edge"};
         for (String browser : browsers) {
             setup(browser);
-            driver.get("http://localhost:3000/");
+            driver.get("https://project-wishlist-giftlistify-ccqrj.ondigitalocean.app/");
             Thread.sleep(2000); // Пауза в 2 секунды
         }
         teardown();
